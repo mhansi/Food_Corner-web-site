@@ -1,0 +1,177 @@
+.info{
+    background:#5D5B5F;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    font-family: 'Nova Flat', cursive;
+    color: #5D5B5F;
+    background: url(../img/background.jpg)center/cover;
+    
+   
+}
+
+.primary-color{
+   color:  #64B6AC;
+}
+.info h2{
+    word-spacing:0.6rem;
+}
+.info a{
+    transition: color 2s ease-in-out ;
+}
+.info a:hover{
+    color: #25433F;
+}
+/*hearder*/
+#header{
+    min-height: calc(80vh);
+    background:linear-gradient(to right,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/burrito-chicken-close-up-461198.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.height-90{
+    min-height: calc(80vh);
+}
+
+.banner h1{
+    border-top: 6px dotted #5D5B5F;
+    border-bottom: 6px dotted #5D5B5F;
+    animation: fromleft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes fromleft{
+    0%{
+        transform: translateX(-100px);
+        opacity:0 ;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.main-btn{
+    color: #64B6AC;
+    font-size:2rem;
+    border: 2px solid #25433F;
+    transition: all is ease-in-out;
+}
+.main-btn:hover{
+    color:#25433F;
+    border: 2px solid #5D5B5F;
+    background-color: #64B6AC;
+}
+.food-btn{
+    animation: fromright;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+@keyframes fromright{
+    0%{
+        transform: translateX(100px);
+        opacity:0 ;
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #64B6AC;
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation: frombottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.header-link{
+    color: #25433F;
+}
+@keyframes frombottom{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+/*menu item*/
+.item-container{
+    position: relative;
+    /*for the link*/
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all 2s ease;
+}
+.item-img{
+    transition: all 2s ease;
+}
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+.item-link{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #64B6AC;
+    font-size: 2rem;
+    border-top: 3px solid #25433F;
+    border-bottom: 3px solid #25433F;
+    transition: all 2s ease;
+    opacity:0 ;
+}
+.item-container:hover .item-link{
+    opacity:1 ;
+}
+.item-link:hover{
+color: #64B6AC;
+border: 3px solid #64B6AC;
+background: #5D5B5F;
+color: #25433F;
+}
+.item-container:hover{
+   outline:  10px solid #64B6AC;
+   outline-offset: 0.8rem;
+}
+/*--------*/
+#menu{
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url(../img/background.jpg)center/cover fixed no-repeat;
+}
+.special{
+    border:3x solid #64B6AC;
+    position: relative;
+}
+.special-text{
+    position: absolute;
+    top: 0;
+    right:10% ;
+    background: #64B6AC;
+    padding: 0 0.4rem;
+}
